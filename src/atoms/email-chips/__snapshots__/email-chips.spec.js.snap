@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should remove EmailChip correctly onClick of remove button 1`] = `
+<span
+  className="emailChips__invalid-email"
+>
+  test@test.com
+  <span
+    className="emailChips__remove-btn"
+    id="emailChips__remove-btn"
+    onClick={[Function]}
+  >
+    X
+  </span>
+</span>
+`;
+
+exports[`should render EmailChips correctly for InValid email 1`] = `
+<span
+  className="emailChips__invalid-email"
+>
+  test@test.com
+  <span
+    className="emailChips__remove-btn"
+    id="emailChips__remove-btn"
+    onClick={[Function]}
+  >
+    X
+  </span>
+</span>
+`;
+
+exports[`should render EmailChips correctly for Valid email 1`] = `
+<span
+  className="emailChips"
+>
+  test@test.com
+  <span
+    className="emailChips__remove-btn"
+    id="emailChips__remove-btn"
+    onClick={[Function]}
+  >
+    X
+  </span>
+</span>
+`;

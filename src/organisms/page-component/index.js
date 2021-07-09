@@ -23,7 +23,6 @@ export default class Page extends Component {
 
     // Removes the email from the list in State Object
     removeEmail = (emailId) => {
-        console.log(this.state.emailsList.filter(email => email !== emailId))
         this.setState({emailsList: this.state.emailsList.filter(email => email.emailId !== emailId)})
     }
 

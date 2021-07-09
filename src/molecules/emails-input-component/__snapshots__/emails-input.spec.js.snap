@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should accpet Email Input correctly on pressing comma 1`] = `
+<div
+  className="emailsInput"
+  id="emailsInput"
+  onClick={[Function]}
+>
+  <EmailChips
+    email={
+      Object {
+        "emailId": "test@test.com",
+      }
+    }
+    key="0"
+    removeEmail={[MockFunction]}
+  />
+  <input
+    autoComplete="off"
+    className="emailsInput__input"
+    id="emailsInput__emai-input"
+    name="email"
+    onKeyDown={[Function]}
+    placeholder="Add people..."
+    type="email"
+  />
+</div>
+`;
+
+exports[`should accpet Invalid Email Input correctly 1`] = `
+<div
+  className="emailsInput"
+  id="emailsInput"
+  onClick={[Function]}
+>
+  <EmailChips
+    email={
+      Object {
+        "emailId": "test@test.com",
+      }
+    }
+    key="0"
+    removeEmail={[MockFunction]}
+  />
+  <input
+    autoComplete="off"
+    className="emailsInput__input"
+    id="emailsInput__emai-input"
+    name="email"
+    onKeyDown={[Function]}
+    placeholder="Add people..."
+    type="email"
+  />
+</div>
+`;
+
+exports[`should accpet valid Email Input correctly 1`] = `
+<div
+  className="emailsInput"
+  id="emailsInput"
+  onClick={[Function]}
+>
+  <EmailChips
+    email={
+      Object {
+        "emailId": "test@test.com",
+      }
+    }
+    key="0"
+    removeEmail={[MockFunction]}
+  />
+  <input
+    autoComplete="off"
+    className="emailsInput__input"
+    id="emailsInput__emai-input"
+    name="email"
+    onKeyDown={[Function]}
+    placeholder="Add people..."
+    type="email"
+  />
+</div>
+`;
+
+exports[`should render EmailsInput correctly 1`] = `
+<div
+  className="emailsInput"
+  id="emailsInput"
+  onClick={[Function]}
+>
+  <EmailChips
+    email={
+      Object {
+        "emailId": "test@test.com",
+      }
+    }
+    key="0"
+    removeEmail={[MockFunction]}
+  />
+  <input
+    autoComplete="off"
+    className="emailsInput__input"
+    id="emailsInput__emai-input"
+    name="email"
+    onKeyDown={[Function]}
+    placeholder="Add people..."
+    type="email"
+  />
+</div>
+`;
+
+exports[`should skip Email Input entry correctly on pressing Enter with empty value 1`] = `
+<div
+  className="emailsInput"
+  id="emailsInput"
+  onClick={[Function]}
+>
+  <EmailChips
+    email={
+      Object {
+        "emailId": "test@test.com",
+      }
+    }
+    key="0"
+    removeEmail={[MockFunction]}
+  />
+  <input
+    autoComplete="off"
+    className="emailsInput__input"
+    id="emailsInput__emai-input"
+    name="email"
+    onKeyDown={[Function]}
+    placeholder="Add people..."
+    type="email"
+  />
+</div>
+`;

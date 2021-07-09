@@ -32,7 +32,7 @@ export default function EmailsInput (props) {
     }
 
         return (
-            <div onClick={focusInput} className={blockName}>
+            <div onClick={focusInput} id={blockName} className={blockName}>
                 {renderEmails()}
                 <input 
                     className={`${blockName}__input`} 

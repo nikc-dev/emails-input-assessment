@@ -10,7 +10,7 @@ export default function EmailChips(props) {
     return (
         <span className={props.email.isInValid ? `${blockName}__invalid-email` : blockName}>
             {props.email.emailId}
-            <span onClick={removeEmail} className={`${blockName}__remove-btn`} >X</span>
+            <span onClick={removeEmail} id={`${blockName}__remove-btn`} className={`${blockName}__remove-btn`} >X</span>
         </span>
     )
 }
