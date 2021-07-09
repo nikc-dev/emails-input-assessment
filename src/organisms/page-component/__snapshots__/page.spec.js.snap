@@ -1,50 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should add a random email to Page Component state correctly 1`] = `
-<div
-  className="page"
->
-  <div
-    className="page__grey-container"
-  >
-    <p
-      className="page__heading-text"
-    >
-      Share 
-      <span
-        className="page__heading-text__bold"
-      >
-        Project name 
-      </span>
-      with others
-    </p>
-    <EmailsInput
-      emailsToRender={
-        Array [
-          Object {
-            "emailId": "bp20sg@random.com",
-          },
-        ]
-      }
-      removeEmail={[Function]}
-      updateEmailsList={[Function]}
-    />
-  </div>
-  <div
-    className="page__btn-container"
-  >
-    <Button
-      handleClick={[Function]}
-      title="Add Email"
-    />
-    <Button
-      handleClick={[Function]}
-      title="Get emails count"
-    />
-  </div>
-</div>
-`;
-
 exports[`should add email to Page Component state correctly from input function 1`] = `
 <div
   className="page"

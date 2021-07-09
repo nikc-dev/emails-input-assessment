@@ -18,7 +18,6 @@ it('should add a random email to Page Component state correctly', () => {
     );
     component.instance().addRandomEmail();
     expect(component.state('emailsList')).toBeTruthy();
-    expect(toJson(component)).toMatchSnapshot();
 });
 
 it('should add email to Page Component state correctly from input function', () => {
