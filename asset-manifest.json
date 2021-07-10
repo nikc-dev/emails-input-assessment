@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/emails-input-assessment/static/css/main.fd65f69b.chunk.css",
-    "main.js": "/emails-input-assessment/static/js/main.442d0a99.chunk.js",
-    "main.js.map": "/emails-input-assessment/static/js/main.442d0a99.chunk.js.map",
+    "main.js": "/emails-input-assessment/static/js/main.f7271d5e.chunk.js",
+    "main.js.map": "/emails-input-assessment/static/js/main.f7271d5e.chunk.js.map",
     "runtime-main.js": "/emails-input-assessment/static/js/runtime-main.e3f005f5.js",
     "runtime-main.js.map": "/emails-input-assessment/static/js/runtime-main.e3f005f5.js.map",
     "static/js/2.ad0c6387.chunk.js": "/emails-input-assessment/static/js/2.ad0c6387.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.e3f005f5.js",
     "static/js/2.ad0c6387.chunk.js",
     "static/css/main.fd65f69b.chunk.css",
-    "static/js/main.442d0a99.chunk.js"
+    "static/js/main.f7271d5e.chunk.js"
   ]
 }
