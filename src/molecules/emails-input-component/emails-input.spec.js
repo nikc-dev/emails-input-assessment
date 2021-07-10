@@ -25,6 +25,14 @@ it('should accpet valid Email Input correctly', () => {
   expect(toJson(component)).toMatchSnapshot();
 });
 
+it('should split pasted emails that is comma seperated', () => {
+  const component = shallow(
+    <EmailsInput updateEmailsList={jest.fn()} removeEmail={jest.fn()} updatePastedEmails={jest.fn()} /> 
+  );
+    component.find('input').simulate("paste", { clipboardData: { getData: jest.fn().mockReturnValue("test@test.com,test2@test.com")}})
+    expect(toJson(component)).toMatchSnapshot();
+})
+
 it('should accpet Invalid Email Input correctly', () => {
     const component = shallow(
       <EmailsInput updateEmailsList={jest.fn()} removeEmail={jest.fn()} emailsToRender={[{emailId: 'test@test.com'}]} />,
@@ -32,6 +40,14 @@ it('should accpet Invalid Email Input correctly', () => {
     component.find('input').simulate('keyDown', { target: { value: 'test@test' }, key: 'Tab' });
     expect(toJson(component)).toMatchSnapshot();
   });
+
+  it('should call onChange function on value change', () => {
+    const component = shallow(
+      <EmailsInput updateEmailsList={jest.fn()} removeEmail={jest.fn()} updatePastedEmails={jest.fn()} /> 
+    );
+      component.find('input').simulate("change", { target: {value: 'abc'}});
+      expect(toJson(component)).toMatchSnapshot();
+  })
 
   it('should accpet Email Input correctly on pressing comma', () => {
     const component = shallow(

@@ -20,9 +20,12 @@ exports[`should accpet Email Input correctly on pressing comma 1`] = `
     className="emailsInput__input"
     id="emailsInput__emai-input"
     name="email"
+    onChange={[Function]}
     onKeyDown={[Function]}
+    onPaste={[Function]}
     placeholder="Add people..."
     type="email"
+    value=""
   />
 </div>
 `;
@@ -47,9 +50,12 @@ exports[`should accpet Invalid Email Input correctly 1`] = `
     className="emailsInput__input"
     id="emailsInput__emai-input"
     name="email"
+    onChange={[Function]}
     onKeyDown={[Function]}
+    onPaste={[Function]}
     placeholder="Add people..."
     type="email"
+    value=""
   />
 </div>
 `;
@@ -74,9 +80,33 @@ exports[`should accpet valid Email Input correctly 1`] = `
     className="emailsInput__input"
     id="emailsInput__emai-input"
     name="email"
+    onChange={[Function]}
     onKeyDown={[Function]}
+    onPaste={[Function]}
     placeholder="Add people..."
     type="email"
+    value=""
+  />
+</div>
+`;
+
+exports[`should call onChange function on value change 1`] = `
+<div
+  className="emailsInput"
+  id="emailsInput"
+  onClick={[Function]}
+>
+  <input
+    autoComplete="off"
+    className="emailsInput__input"
+    id="emailsInput__emai-input"
+    name="email"
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    onPaste={[Function]}
+    placeholder="Add people..."
+    type="email"
+    value="abc"
   />
 </div>
 `;
@@ -101,9 +131,12 @@ exports[`should render EmailsInput correctly 1`] = `
     className="emailsInput__input"
     id="emailsInput__emai-input"
     name="email"
+    onChange={[Function]}
     onKeyDown={[Function]}
+    onPaste={[Function]}
     placeholder="Add people..."
     type="email"
+    value=""
   />
 </div>
 `;
@@ -128,9 +161,33 @@ exports[`should skip Email Input entry correctly on pressing Enter with empty va
     className="emailsInput__input"
     id="emailsInput__emai-input"
     name="email"
+    onChange={[Function]}
     onKeyDown={[Function]}
+    onPaste={[Function]}
     placeholder="Add people..."
     type="email"
+    value=""
+  />
+</div>
+`;
+
+exports[`should split pasted emails that is comma seperated 1`] = `
+<div
+  className="emailsInput"
+  id="emailsInput"
+  onClick={[Function]}
+>
+  <input
+    autoComplete="off"
+    className="emailsInput__input"
+    id="emailsInput__emai-input"
+    name="email"
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    onPaste={[Function]}
+    placeholder="Add people..."
+    type="email"
+    value=""
   />
 </div>
 `;

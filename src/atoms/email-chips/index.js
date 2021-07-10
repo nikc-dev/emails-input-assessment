@@ -4,6 +4,8 @@ import './email-chips.scss'
 const blockName = 'emailChips'
 
 export default function EmailChips(props) {
+
+    // Triggers a function at parent to remove the selected email
     let removeEmail = () => {
         props.removeEmail(props.email.emailId);
     }

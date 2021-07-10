@@ -28,6 +28,7 @@ exports[`should add email to Page Component state correctly from input function 
       }
       removeEmail={[Function]}
       updateEmailsList={[Function]}
+      updatePastedEmails={[Function]}
     />
   </div>
   <div
@@ -67,6 +68,7 @@ exports[`should remove email from Page Component state correctly from remove fun
       emailsToRender={Array []}
       removeEmail={[Function]}
       updateEmailsList={[Function]}
+      updatePastedEmails={[Function]}
     />
   </div>
   <div
@@ -106,6 +108,7 @@ exports[`should render Page Component correctly 1`] = `
       emailsToRender={Array []}
       removeEmail={[Function]}
       updateEmailsList={[Function]}
+      updatePastedEmails={[Function]}
     />
   </div>
   <div
@@ -151,6 +154,7 @@ exports[`should show alert from Page Component 1`] = `
       }
       removeEmail={[Function]}
       updateEmailsList={[Function]}
+      updatePastedEmails={[Function]}
     />
   </div>
   <div

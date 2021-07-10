@@ -21,6 +21,10 @@ export default class Page extends Component {
         this.setState({emailsList:[...this.state.emailsList, email]});
     }
 
+    updatePastedEmails = (emails) => {
+        this.setState({emailsList:[...this.state.emailsList, ...emails]})
+    }
+
     // Removes the email from the list in State Object
     removeEmail = (emailId) => {
         this.setState({emailsList: this.state.emailsList.filter(email => email.emailId !== emailId)})
@@ -36,7 +40,7 @@ export default class Page extends Component {
             <div className={blockName}>
                 <div className={`${blockName}__grey-container`}>
                     <p className={`${blockName}__heading-text`}>Share <span className={`${blockName}__heading-text__bold`}>Project name </span>with others</p>
-                    <EmailsInput emailsToRender={this.state.emailsList} updateEmailsList={this.updateEmailsList} removeEmail={this.removeEmail} />
+                    <EmailsInput emailsToRender={this.state.emailsList} updateEmailsList={this.updateEmailsList} updatePastedEmails={this.updatePastedEmails} removeEmail={this.removeEmail} />
                 </div>
                 <div className={`${blockName}__btn-container`}>
                     <Button handleClick={this.addRandomEmail} title={'Add Email'} />

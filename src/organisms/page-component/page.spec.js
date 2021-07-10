@@ -20,6 +20,14 @@ it('should add a random email to Page Component state correctly', () => {
     expect(component.state('emailsList')).toBeTruthy();
 });
 
+it('should add pasted emails to Page Component state correctly', () => {
+  const component = shallow(
+    <Page />,
+  );
+  component.instance().updatePastedEmails([{emailId:'test@test.com'}, {emailId: 'test2@test.com'}]);
+  expect(component.state('emailsList')).toBeTruthy();
+});
+
 it('should add email to Page Component state correctly from input function', () => {
     const component = shallow(
       <Page />,
