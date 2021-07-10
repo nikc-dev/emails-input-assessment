@@ -25,7 +25,7 @@ export default function EmailsInput (props) {
         if (e.target.value && ['Enter', 'Tab', ','].includes(e.key)) {
             const { value } = e.target
             let email;
-            if (/[\w\d.-]+@[\w\d\.-]+\.[\w\d.-]+/.test(value.trim())) {
+            if (/[\w\d.-]+@[\w\d.-]+\.[\w\d.-]+/.test(value.trim())) {
                 email = {emailId: value.trim()}
             } else {
                 email = {emailId: value.trim(), isInValid: true}
